@@ -1,5 +1,5 @@
 # Restaurant-Web-App
-This is the responsive application where I utilize the html5 and css3 with media query for all 3 devices (web/tablet/mobile view))
+This is the responsive restaurant application where I used the html5 and css3 with media query for all 3 devices (web/tablet/mobile view))
 
 Home Page
 
