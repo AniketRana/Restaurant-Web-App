@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    color: green;
+}
+nav
+{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+}
+nav ul
+{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease;
+}
+nav ul a:hover{
+    background-color: green;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+}
+.cards-section img{
+    height: 300px;
+    width:400px;
+    object-fit: cover;
+    vertical-align: middle;
+    align-items: center;
+}
+.cards{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cards_item{
+    display: flex;
+    padding: 1rem;
+    width: 25%;
+}
+.cards_item:hover
+{
+    transform: scale(1.05);
+}
+.card
+{
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card_content{
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+    
+}
+.card-text{
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.card button
+{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.card h4{
+    padding: 5px;
+    text-align: center;
+    color: gray;
+}
+.card button:hover
+{
+    transform: scale(1.08);
+}
+
+ @media (max-width:1260px) {
+    .cards_item
+    {
+        display: flex;
+        width: 33%;
+        justify-content: center;
+    }
+    .cards-section img
+    {    
+        height: 300px;
+        width:400px;
+        object-fit: cover;
+    }
+}
+@media (max-width:900px) {
+    .cards_item
+    {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+    .cards-section img
+    {    
+        height: 300px;
+        width:400px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:600px) 
+{
+    .cards_item
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .cards-section img
+    {    
+        height: 300px;
+        width:400px;
+        object-fit: cover;
+    }
+}
